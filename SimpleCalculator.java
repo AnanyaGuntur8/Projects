@@ -25,7 +25,11 @@ public class Calculator {
             case "/":
                 int resultDiv1 = a/b;
                 int resultDiv2 = ((a%b));
+                if (resultDiv1 == 0){
+                    System.out.println( "( " +resultDiv2+"/"+b+" )");
+                }else {
                 System.out.println(a + " / " + b + " = " + resultDiv1+ " " + "( " +resultDiv2+"/"+b+" )");
+                }
                 break;
             case " ":
                 System.out.println("Invalid.");
